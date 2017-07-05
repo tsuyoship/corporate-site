@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%; }
+
+header {
+  background: #eaf2f4; }
+  header #header_in {
+    padding-top: 10px;
+    padding-bottom: 4px; }
+  @media (max-width: 550px) {
+    header .logo {
+      width: 190px; }
+    header .navi {
+      width: 40px;
+      float: right; } }
+  header .sp_navi_li {
+    width: 180px;
+    position: absolute;
+    top: 50px;
+    right: 2%;
+    border: 1px solid #eee;
+    background: white;
+    margin: 0;
+    padding: 0; }
+    header .sp_navi_li li {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header .sp_navi_li li a {
+        display: block;
+        padding: 10px 8px;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+        text-decoration: none; }
+
+/*# sourceMappingURL=sample.css.map */
