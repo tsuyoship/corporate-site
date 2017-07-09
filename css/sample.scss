@@ -1,13 +1,12 @@
 @charset "utf-8";
 
-
-html {
+html{
   font-size: 62.5%;
 }
 
-@mixin fontsize($size: 24, $base: 10) {
+@mixin fontsize($size: 24,$base: 10){
   font-size: $size + px;
-  font-size: ($size / $base) * 1rem;
+  font-size: ($size/$base)* 1rem;
 }
 
 $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
@@ -16,57 +15,90 @@ $blue2 : #339fd1;
 $gray_blue : #eaf2f4;
 
 header{
-
   background: $gray_blue;
-
+  
   #header_in{
     padding-top: 10px;
-    padding-bottom:4px;
+    padding-bottom: 4px;
   }
-
-  @media (max-width: 550px) {
-    .logo{
-      width: 190px;
-    }
-
-    .navi{
-      width:40px;
-      float: right;
-    }
-  }//@media終わり
-
+  
+ 
   .sp_navi_li{
     width: 180px;
     position: absolute;
-    top:50px;
-    right:2%;
+    top: 50px;
+    right: 2%;
     border: 1px solid #eee;
     background: white;
     margin: 0;
-    padding:0;
+    padding: 0;
     display: none;
+    
+    a{
+      display:block;
+      padding: 10px 8px;
+      border-bottom: 1px solid #eee;
+      font-size: 14px;
+      text-decoration: none;
+    }
+  }
+}
 
-    li{
+//header
 
-      list-style: none;
-      margin: 0;
-      padding:0;
+#cover_area{
+  
+  text-align: center;
+  padding: 80px 0;
+  
+  //retina_bg
+  
+  background-image: url("../images/top/cover.jpg");
+  background-size: cover;
+  
+  @media screen and (-webkit-min-device-pixel-ratio:2),(min-resolution: 2dppx){
+    background-image: url("../images/top/cover@2x.jpg");
+  }
+}
 
-      a{
-        display: block;
-        padding: 10px 8px;
-        border-bottom: 1px solid #eee;
-        font-size: 14px;
-        text-decoration: none;
-      }
+#service_area{
+  padding-top:20px;
+  
+  .columns{
+    color:#626262;
+    
+    .service_title{
+      @include fontsize(18);
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    
+    p{
+      @include fontsize(15);
+      margin-top: 10px;
+    }
+  }
+}
+ @media (max-width: 550px){
+    .logo{
+      width: 190px;
+    }
+    .navi{
+      width: 40px;
+      float: right;
+    }
+    .pc_navi{
+      display: none;
     }
   }
   
-     @media (min-width: 551px) {
+  @media (min-width: 551px) {
+
     .sp_navi{
       display: none;
     }
-        #header_in{
+
+    #header_in{
       padding: 15px 0 10px 0;
     }
 
@@ -128,17 +160,22 @@ header{
 
         @media screen and (-webkit-min-device-pixel-ratio:2),
                           (min-resolution: 2dppx){
+
           background-image: url("../images/top/navi_news@2x.png");
+
         }
+
       }
       // .li.navi_news a
 
       li.navi_company a{
         //retina_bg
+
         background-repeat:no-repeat;
         display: inline-block;
         line-height: 40px;
         padding-left: 50px;
+
           background-image: url("../images/top/navi_company.png");
           background-size: 40px 40px;
 
@@ -148,32 +185,10 @@ header{
           background-image: url("../images/top/navi_company@2x.png");
         }
       }
-      // .li.navi_company 
+      // .li.navi_company a
     }
     // .pc_navi_li
-  }
-  // min-width: 551px
-  @media (max-width: 550px) {
-    .pc_navi{
-      display: none;
-    }
-  }    //@media終わり
-}
-// header
-#cover_area{
-  text-align: center;
-  padding: 80px 0;
-//retina_bg
-
-  background-image: url("../images/top/cover.jpg");
-  background-size: cover;
-  
-  @media screen and (-webkit-min-device-pixel-ratio:2),(min-resolution: 2dppx){
-    background-image: url("../images/top/cover@2x.jpg");
-  }
-  
-  @media (min-width: 551px){
-    
+  #cover_area{
     text-align: left;
     height: 420px;
     padding: 0;
@@ -183,5 +198,22 @@ header{
       margin-left: 70px;
     }
   }
-}
-
+  #service_area{
+    padding-top: 30px;
+    
+    .columns{
+      .service_title{
+        @include fontsize(16);
+      }
+      p{
+        @include fontsize(13);
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  }
+  // min-width: 551px
