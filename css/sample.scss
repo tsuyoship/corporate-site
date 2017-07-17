@@ -226,6 +226,94 @@ header{
       }
     }
   }
+}//#news_area
+
+footer{
+  
+  background-color: $blue1;
+  color: #fff;
+  padding-top: 20px;
+  
+  @media (max-width: 550px){
+    .container{
+      margin: 0;
+      padding: 0;
+    }
+    
+    .sp{
+      padding: 0;
+      margin: 0 auto;
+    }
+    .foot_navi{
+      margin-top: 20px;
+      
+      li{
+        list-style: none;
+        margin-bottom: 1px;
+        
+        a{
+          color: $blue1;
+          background-color: $gray_blue;
+          display: block;
+          text-align: center;
+          font-weight: bold;
+          text-decoration: none;
+          @include fontsize(16);
+          padding: 16px 0;
+          }
+      }
+    }
+  }//@media max-width 550px
+  
+  .foot-address{
+    @include fontsize(16);
+    padding-top: 10px;
+  }
+  
+  .copy{
+    text-align: center;
+    @include fontsize(11);
+    color: #b2e1ea;
+  }
+  
+  @media (min-width: 551px){
+    padding-top: 30px;
+    
+    .foot_address{
+      padding: 0px;
+      @include fontsize(12);
+    }
+    
+    .foot_navi{
+      float: right;
+      
+      li{
+        list-style: none;
+        background-repeat: no-repeat;
+        background-position: left center;
+        display: inline-block;
+        float: left;
+        margin-right: 10px;
+        @include fontsize(11);
+        
+        background-image: url("../images/top/foot_arroehead.png");
+        background-size: 4px 6px;
+      }//li
+      
+      a{
+        color: white;
+        padding-left: 10px;
+        text-decoration: none;
+      }
+      
+      a:hover{
+        color: $gray_blue;
+      }
+      copy{
+        margin-top: 30px;
+      }
+    }
+  }
 }
 
 
