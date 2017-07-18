@@ -278,6 +278,7 @@ footer{
     text-align: center;
     @include fontsize(11);
     color: #b2e1ea;
+    margin-top: 30px;
   }
   
   @media (min-width: 551px){
@@ -348,6 +349,11 @@ footer{
   }//@media max-width 550px
 }//sub_cover
 
+#contents{
+  padding-top: 35px;
+  padding-bottom: 70px;
+}//#content
+
 #main{
   box-sizing: border-box;
   color: rgb(34,34,34);
@@ -362,9 +368,9 @@ footer{
     border-bottom: $blue1 solid 3px;
     font-weight: bold;
     display: block;
-    margin: 20px 0;
     padding-bottom: 20px;
   }//h2
+  
   ul{
     li{
       list-style-type: none;
@@ -374,17 +380,23 @@ footer{
         padding-right: 10px;
       }
     }
+    
   }//ul
-  tr{
-    color: #626262;
     th{
-      padding-right: 100px;
+      padding: 20px　0;
+        color: #626262;
+  
       }
+    
+    @media (min-width: 551px){
+      .news_li{
+    padding-bottom: 5px;  
+    }
     }
 }//main
 
 #sidebar{
-  margin-top: 40px;
+  padding-bottom: 20px;
   .pc_sidemenu{
     h3{
       color: $blue1;
@@ -394,18 +406,18 @@ footer{
       padding: 15px;
       margin-bottom: 0;
       background-color: $gray_blue;
-      @include fontsize(14)
+      @include fontsize(14);
     }
     ul{
       li{
         list-style: none;
         display: block;
-        border-bottom: 1px solid $gray_blue;
+        border-bottom: 1px solid #e5e5e5;
         background-image: url("../images/news/side_arrow.png");
         background-repeat: no-repeat;
         background-position: 8px center;
         padding: 10px 10px 10px 20px;
-        margin-bottom: 10px;
+        margin-bottom: 0;
         
         a{
           text-decoration: none;
