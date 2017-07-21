@@ -359,8 +359,14 @@ footer{
   color: rgb(34,34,34);
   display: block;
   font-family: "Raleway";
-  line-height: 24px;
+  line-height: 22px;
   margin-left: 0;
+  
+  @media (min-width: 550px){
+    .news_li{
+      padding-bottom: 5px;
+    }
+  }
   
   h2{
     color: rgb(66,185,208);
@@ -369,6 +375,8 @@ footer{
     font-weight: bold;
     display: block;
     padding-bottom: 20px;
+	  margin-bottom: 0;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }//h2
   
   ul{
@@ -379,20 +387,24 @@ footer{
         font-weight: bold;
         padding-right: 10px;
       }
+      @media (max-width: 550px){
+        span{
+          display: block;
+        }
+      }
     }
     
   }//ul
     th{
-      padding: 20px　0;
+      padding: 20px 20px 20px 0;
         color: #626262;
-  
       }
+    td{
+      padding: 20px 20px 20px 0;
+        color: #626262;
+    }
     
-    @media (min-width: 551px){
-      .news_li{
-    padding-bottom: 5px;  
-    }
-    }
+ 
 }//main
 
 #sidebar{
