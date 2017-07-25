@@ -222,7 +222,7 @@ footer {
     text-align: center;
     color: white;
     font-weight: bold;
-    margin: 0;
+    margin: 0 0 20px 0;
     letter-spacing: 0.2rem; }
   @media (min-width: 551px) {
     #sub_cover {
@@ -258,8 +258,10 @@ footer {
     font-weight: bold;
     display: block;
     padding-bottom: 20px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    #main h2.company_st {
+      margin-bottom: 0; }
   #main ul li {
     list-style-type: none; }
     #main ul li span {

@@ -329,8 +329,8 @@ footer{
     text-align: center;
     color: white;
     font-weight: bold;
-    margin: 0;
-    letter-spacing: 0.2rem;
+    margin: 0 0 20px 0;
+    letter-spacing: 0.2rem; 
   }
   
   @media (min-width: 551px){
@@ -375,7 +375,10 @@ footer{
     font-weight: bold;
     display: block;
     padding-bottom: 20px;
-	  margin-bottom: 0;
+	  margin-bottom: 20px;
+    &.company_st{
+      margin-bottom: 0;
+    }
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }//h2
   
@@ -447,7 +450,6 @@ footer{
   }//@media max-width
   
 }//sidebar
-
 
 
 
