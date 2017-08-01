@@ -222,7 +222,7 @@ footer {
     text-align: center;
     color: white;
     font-weight: bold;
-    margin: 0 0 20px 0;
+    margin: 0;
     letter-spacing: 0.2rem; }
   @media (min-width: 551px) {
     #sub_cover {
@@ -263,7 +263,8 @@ footer {
     #main h2.company_st {
       margin-bottom: 0; }
   #main ul li {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-bottom: 5px; }
     #main ul li span {
       color: #42b9d0;
       font-weight: bold;
